@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4921637566585878}
   - component: {fileID: 212427300029462116}
   - component: {fileID: 60783856774917232}
+  - component: {fileID: 114603428275027058}
   m_Layer: 0
   m_Name: airplane01
   m_TagString: Untagged
@@ -82,6 +83,20 @@ PolygonCollider2D:
       - {x: 0.22, y: -0.25}
       - {x: 0.39999998, y: -0.14}
       - {x: 0.39999998, y: -0.049999997}
+--- !u!114 &114603428275027058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321288566397630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1493480cd8c41334b850702445439f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedForward: -0.2
+  speedSideward: 0.25
+  positive: 0
 --- !u!212 &212427300029462116
 SpriteRenderer:
   m_ObjectHideFlags: 1
