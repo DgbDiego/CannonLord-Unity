@@ -5,6 +5,13 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+Códigos produzidos por Diego Gomes Barbosa
+dgb.diego@gmail.com
+https://diego-gomes.itch.io
+https://github.com/DgbDiego/
+ */
+
 public class gameManager : MonoBehaviour {
 
 	public string timeCounter;

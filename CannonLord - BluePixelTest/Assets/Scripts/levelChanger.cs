@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+Códigos produzidos por Diego Gomes Barbosa
+dgb.diego@gmail.com
+https://diego-gomes.itch.io
+https://github.com/DgbDiego/
+ */
+ 
 public class levelChanger : MonoBehaviour {
 
 	// Use this for initialization
@@ -18,5 +25,12 @@ public class levelChanger : MonoBehaviour {
 	public void changeLevel (int scene){
 		Time.timeScale = 1f;
 		SceneManager.LoadScene(scene);
+
+	}
+
+	public void exitGame(){
+
+		Application.Quit();
+
 	}
 }
