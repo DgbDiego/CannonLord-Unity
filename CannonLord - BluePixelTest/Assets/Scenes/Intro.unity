@@ -206,6 +206,22 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25ebdbb6dde74cb43adcbd063b17ab86, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &330951046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1254132532626632, guid: 700d59deac0747849b7cf6971818702a,
+    type: 2}
+  m_PrefabInternal: {fileID: 29842545}
+--- !u!114 &330951047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330951046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81170df183df2f249a309ac1bc89e969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +312,7 @@ GameObject:
   - component: {fileID: 609724806}
   - component: {fileID: 609724809}
   m_Layer: 5
-  m_Name: FireButton
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -359,7 +375,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609724807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 330951047}
+        m_MethodName: changeLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &609724807

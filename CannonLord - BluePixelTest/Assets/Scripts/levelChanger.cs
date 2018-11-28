@@ -16,6 +16,7 @@ public class levelChanger : MonoBehaviour {
 	}
 
 	public void changeLevel (int scene){
+		Time.timeScale = 1f;
 		SceneManager.LoadScene(scene);
 	}
 }

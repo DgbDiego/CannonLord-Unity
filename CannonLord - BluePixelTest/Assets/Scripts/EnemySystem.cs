@@ -51,7 +51,8 @@ private void OnTriggerEnter2D(Collider2D other) {
 				positive = false;
 				break;
 			case "End" :
-				Destroy(this.gameObject);
+				other.GetComponent<gameManager>().gameOverState();
+				//Destroy(this.gameObject);
 				break;
 			default:
 				break;
